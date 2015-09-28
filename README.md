@@ -1,8 +1,8 @@
 # Assignment2
 
-This is a continuation of [Assignment 1](https://github.com/erkartik91/assignment1). If you have successfully completed Assignment 1, you can continue working within the same. **To help you, we will also release the solution for Assignment 1**. You are free to continure from the solution provided for Assignment 1 or with you own developed web page.
+This is a continuation of [Assignment 1](https://github.com/erkartik91/assignment1). If you have successfully completed Assignment 1, you can continue working with your own code. **To help you, we will also release the solution for Assignment 1**. You are free to use the solution provided for Assignment 1 or with your own code. Because this is the first assignment, we are providing the solution - solutions for future assignments may not be provided and you'll have to use your own code.
 
-As a part of this assignment you will be implementing the add to cart functionality.
+As part of this assignment you will be implementing the add to cart functionality in the shopping cart web application.
 
 
 ## Tasks
@@ -11,15 +11,15 @@ As a part of this assignment you will be implementing the add to cart functional
 When you hover over any of the products within the web page, you need to show the cart symbol on top of the product image. The user should still be able to see the product in the background. Please refer to the [layout.png](https://github.com/erkartik91/assignment2/blob/master/layout.png) file reference. You will also need to show two buttons **Add** and **Remove**.
 
 2. **Cart Variables:** 
-  * You will maintain your cart as a JavaScript global variable **cart**. It is an associative array. Product names represent the indexes, and values represent the number of products orderd by the customer.
-  * You will also need to maintain product prices as a javascript variable **products**. This variable should be initialized as soon as the web page is loaded. It is also an associative array of product names and prices.
-  * When the user clicks on **Add** button, you will call **addToCart** JavaScript function, that will update the cart. If the product already exists in the cart variable, you will update the quanity of the product. If it does not exist you will add the product in the cart and initialize the quantity to be 1. Use the following function signature to define the function.
+  * You will need to maintain your cart as a JavaScript global variable **cart**. It should be represented as an associative array (i.e., object). Product names represent the indexes, and values represent the number of products ordered by the customer.
+  * You will also need to maintain product prices as a global variable **products**. This variable should be initialized as soon as the web page is loaded. It is also an associative array of product names and prices (again an object).
+  * When the user clicks on **Add** button, you will call **addToCart** JavaScript function, that will update the cart (Use the 'onClick' event for this purpose). If the product already exists in the cart, you will need to increment the quanity of the product by 1. If it does not exist you will add the product in the cart and initialize the quantity to be 1. Use the following function signature to define the function (NOTE: Please follow the names below exactly as otherwise our tests will fail).
      ```
      function addToCart(productName) {
   
      }
      ```
-  * When the user clicks on **Remove** button, you will call **removeFromCart** Javascript function, that will update the cart. If there is no same product in the cart, you should present the user with an alert message saying the product does not exist in the cart. If there are more than 1 of the same product reduce the quantity. If there is only 1 product, remove the product completely from the cart variable. Use the following function signature to define the function.
+  * When the user clicks on **Remove** button, you will call **removeFromCart** Javascript function, that will update the cart. If there is no same product in the cart, you should present the user with an alert message saying the product does not exist in the cart. If there are more than 1 of the same product, decrement the quantity by 1. If the quantity in the cart is 1, remove the product completely from the cart variable. Use the following function signature to define the function.
      ```
      function removeFromCart(productName) {
   
