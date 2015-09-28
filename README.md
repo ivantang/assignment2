@@ -39,7 +39,8 @@ At any point in time, the following global variables should reflect the cart sta
 ## Testing
 **To test you code, insert the following script tags within the head tag of your page**
 ```
-//todo: add the validation scripts here
+<script src="http://ece.ubc.ca/~kbajaj/cpen400a/jquery.js" type="text/javascript"></script>
+<script src="http://ece.ubc.ca/~gpli/CPEN400A/hw2/test.js" type="text/javascript"></script>
 ```
-You will see a Red button on the top-right corner of your web page. Clicking on that will let you test your code.
+Once you add the above scripts, the testing automatically starts when page is loaded. Watch out the alert messages which tells you any missing components/functionalites.
 
