@@ -1,6 +1,6 @@
 # Assignment2
 
-This is a continuation of [Assignment 1](https://github.com/erkartik91/assignment1). If you have successfully completed Assignment 1, you can continue working with your own code. **To help you, we will also release the solution for Assignment 1**. You are free to use the solution provided for Assignment 1 or with your own code. Because this is the first assignment, we are providing the solution - solutions for future assignments may not be provided and you'll have to use your own code.
+This is a continuation of [Assignment 1](https://github.com/erkartik91/assignment1). If you have successfully completed Assignment 1, you can continue working with your own code. **To help you, we will also release the solution for Assignment 1 (once the marking for assignment 1 is complete)**. You are free to use the solution provided for Assignment 1 or with your own code. Because this is the first assignment, we are providing the solution - solutions for future assignments may not be provided and you'll have to use your own code.
 
 As part of this assignment you will be implementing the "add to cart" functionality in the shopping cart web application.
 
@@ -28,6 +28,10 @@ When you hover over any of the products within the web page, you need to show th
 
 3. **Timeout popup:** 
 You also need to implement a timeout feature in the web application. Once the user loads the web page, you need to start the timer with an initial value of 30 seconds (Use the setTimeout or setInterval functions). If the user **does not** add / remove any product from the cart, you need to display an alert to the user. The alert message should be **Hey there! Are you still planning to buy something?** However, if the user adds/removes a product from the cart there should be no popup displayed (i.e., the timer is reset). You will need to keep track of the time the user has been inactive. Use a global variable called **inactiveTime** for this purpose. Once the user clicks OK in the alert popup, you will need to reset this time.   
+
+4. **Show Cart:**
+You can add a button called **Show Cart** in your website. Clicking the button should display all the product items/quantity in the cart one by one in alert box. However, to not overwhelm the user with a bunch of alerts all together, we need to maintain a gap of 30 seconds within each alert box displayed to the user.
+
 
 At any point in time, the following global variables should reflect the cart state:
 
