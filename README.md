@@ -13,7 +13,7 @@ When you hover over any of the products within the web page, you need to show th
 2. **Cart Variables:** 
   * You will need to maintain your cart as a JavaScript global variable **cart**. It should be represented as an associative array (i.e., object). Product names represent the indexes, and values represent the number of products ordered by the customer.
   * You will also need to maintain product prices as a global variable **products**. This variable should be initialized as soon as the web page is loaded. It is also an associative array of product names and prices (again an object).
-  * When the user clicks on **Add** button, you will call **addToCart** JavaScript function, that will update the cart (Use the 'onClick' event for this purpose). If the product already exists in the cart, you will need to increment the quanity of the product by 1. If it does not exist you will add the product in the cart and initialize the quantity to be 1. Use the following function signature to define the function (**NOTE: Please follow the function signatures exactly as otherwise our automated tests will fail, and you will be penalized**).
+  * When the user clicks on **Add** button, you will call **addToCart** JavaScript function, that will update the cart (Use the 'click' event for this purpose). If the product already exists in the cart, you will need to increment the quanity of the product by 1. If it does not exist you will add the product in the cart and initialize the quantity to be 1. Use the following function signature to define the function (**NOTE: Please follow the function signatures exactly as otherwise our automated tests will fail, and you will be penalized**).
      ```
      function addToCart(productName) {
   
