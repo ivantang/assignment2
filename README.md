@@ -48,3 +48,10 @@ At any point in time, the following global variables should reflect the cart sta
 ```
 Once you add the above scripts, the testing automatically starts when page is loaded. Watch out the alert messages which tells you any missing components/functionalites. You are responsible for ensuring that all the functionalities above are implemented correctly - the tests are only there to help you. We reserve the right to test your code with other test cases than the above.
 
+## Submission instructions:
+
+* Add a folder called **assignment2** in your github repo.
+* Copy the code from your assignment 1 (or the one provided as solution for assignment 1)
+* Update the code to reflect the changes for this assignment.
+* Make sure you push your changes before midnight (11:59 PM) before the day when assignment is due - late submissions will not be accepted.
+* We will be downloading the code on the midnight before the due date, any changes to code after that point will not be considered for marking.
