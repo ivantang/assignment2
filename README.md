@@ -13,12 +13,13 @@ When you hover over any of the products within the web page, you need to show th
 2. **Cart Variables:** 
   * You will need to maintain your cart as a JavaScript global variable **cart**. It should be represented as an associative array (i.e., object). Product names represent the indexes, and values represent the number of products ordered by the customer.
   * You will also need to maintain product prices as a global variable **products**. This variable should be initialized as soon as the web page is loaded. It is also an associative array of product names and prices (again an object).
-  * When the user clicks on **Add** button, you will call **addToCart** JavaScript function, that will update the cart (Use the 'click' event for this purpose). If the product already exists in the cart, you will need to increment the quanity of the product by 1. If it does not exist you will add the product in the cart and initialize the quantity to be 1. Use the following function signature to define the function (**NOTE: Please follow the function signatures exactly as otherwise our automated tests will fail, and you will be penalized. The product names are given in assignment 1, in products folder, image of each product is named as ProductName_Price.png. So you should use the same names here, for example, for "Box1_$10.png", you should name the product "Box1".**).
+  * When the user clicks on **Add** button, you will call **addToCart** JavaScript function, that will update the cart (Use the 'click' event for this purpose). If the product already exists in the cart, you will need to increment the quanity of the product by 1. If it does not exist you will add the product in the cart and initialize the quantity to be 1. Use the following function signature to define the function (**NOTE: Please follow the function signatures exactly as otherwise our automated tests will fail, and you will be penalized.**).
      ```
      function addToCart(productName) {
   
      }
      ```
+   The product names are given in assignment 1, in products folder, image of each product is named as "ProductName_Price.png". So you should use the same names here, for example, for "Box1_$10.png", you should name the product "Box1".
   * When the user clicks on **Remove** button, you will call the **removeFromCart** Javascript function, that will update the cart. If there is no such product in the cart, you should present the user with an alert message saying the product does not exist in the cart. If there are more than 1 of the same product, decrement the quantity by 1. If the quantity in the cart is 1, remove the product completely from the cart object. Use the following function signature to define the function.
      ```
      function removeFromCart(productName) {
