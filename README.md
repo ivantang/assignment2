@@ -54,15 +54,14 @@ Once you add the above scripts, the testing automatically starts when page is lo
 * Copy the code from your assignment 1 (or the one provided as solution for assignment 1)
 * Update the code to reflect the changes for this assignment.
 * Create a branch called assignment-2.
-* Make sure you push your changes before the due date - late submissions will not be accepted.
+* Make sure you push your changes before the due date - late submissions will not be accepted. s
   For students in L1A, the assignment is due on Tuesday, October 11 at 11:59 PM.
   For students in L1B, the assignment is due on Thursday, October 13 at 11:59 PM.
 * We will be downloading the code on the due date, any changes to code after that point will not be considered for marking.
 
 ## Labs are mandatory on the week of assignment submission:
 
-* If you can not attend the lab to demo your assignment for any reason, you need to notice Instructors on Piazza ahead of at least two hours before the  
-  lab section starts. Otherwise, you will be recorded as no attendance.
+* If you can not attend the lab to demo your assignment for any reason, you need to notice Instructors on Piazza ahead of at least two hours before the lab section starts. Otherwise, you will be recorded as no attendance.
 
 
 
