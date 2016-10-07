@@ -32,7 +32,7 @@ When you hover over any of the products within the web page, you need to show th
 You also need to implement a timeout feature in the web application. Once the user loads the web page, you need to start the timer with an initial value of 30 seconds (Use the setTimeout or setInterval functions). If the user **does not** add / remove any product from the cart, you need to display an alert to the user. The alert message should be **Hey there! Are you still planning to buy something?** However, if the user adds/removes a product from the cart there should be no popup displayed (i.e., the timer is reset). You will need to keep track of the time the user has been inactive. Use a global variable called **inactiveTime** for this purpose. Once the user clicks OK in the alert popup, you will need to reset this time.   
 
 4. **Show Cart:** (Bonus Task: 0.5 points)
-You can add a button called **Show Cart** in your website. Clicking the button should display all the product items/quantity in the cart one by one in alert box. However, to not overwhelm the user with a bunch of alerts all together, we need to maintain a gap of 30 seconds within each alert box displayed to the user.
+You can add a button called **Show Cart** in your website. Clicking the button should display all the current product items/quantity in the cart one by one in an alert box. For example, if you have 3 items in your cart, you should have 3 different alert boxes. However, to not overwhelm the user with a bunch of alerts all together, we need to maintain a gap of 30 seconds within each alert box displayed to the user (after the user presses OK).
 
 
 At any point in time, the following global variables should reflect the cart state:
