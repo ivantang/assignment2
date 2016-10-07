@@ -7,10 +7,10 @@ As part of this assignment you will be implementing the "add to cart" functional
 
 ## Tasks
 
-1. **Add to cart buttons:** 
+1. **Add to cart buttons:** (3 points)
 When you hover over any of the products within the web page, you need to show the cart symbol on top of the product image. The user should still be able to see the product in the background. Please refer to the [layout.png](https://github.com/erkartik91/assignment2/blob/master/layout.png) file reference. You will also need to show two buttons **Add** and **Remove**.
 
-2. **Cart Variables:** 
+2. **Cart Variables:** (4 points)
   * You will need to maintain your cart as a JavaScript global variable **cart**. It should be represented as an associative array (i.e., object). Product names represent the indexes, and values represent the number of products ordered by the customer.
   * You will also need to maintain product quantity as a global variable **products**. This variable should be initialized as soon as the web page is loaded. It is also an associative array of product names and quantity (again an object).
   * When the user clicks on **Add** button, you will call **addToCart** JavaScript function, that will update the cart (Use the 'click' event for this purpose). If the product already exists in the cart, you will need to increment the quanity of the product by 1. If it does not exist you will add the product in the cart and initialize the quantity to be 1. Use the following function signature to define the function (**NOTE: Please follow the function signatures exactly as otherwise our automated tests will fail, and you will be penalized.**).
@@ -27,10 +27,10 @@ When you hover over any of the products within the web page, you need to show th
      }
      ```
 
-3. **Timeout popup:** 
+3. **Timeout popup:**  (3 points)
 You also need to implement a timeout feature in the web application. Once the user loads the web page, you need to start the timer with an initial value of 30 seconds (Use the setTimeout or setInterval functions). If the user **does not** add / remove any product from the cart, you need to display an alert to the user. The alert message should be **Hey there! Are you still planning to buy something?** However, if the user adds/removes a product from the cart there should be no popup displayed (i.e., the timer is reset). You will need to keep track of the time the user has been inactive. Use a global variable called **inactiveTime** for this purpose. Once the user clicks OK in the alert popup, you will need to reset this time.   
 
-4. **Show Cart:**
+4. **Show Cart:** (Bonus Task: 0.5 points)
 You can add a button called **Show Cart** in your website. Clicking the button should display all the product items/quantity in the cart one by one in alert box. However, to not overwhelm the user with a bunch of alerts all together, we need to maintain a gap of 30 seconds within each alert box displayed to the user.
 
 
@@ -48,6 +48,9 @@ At any point in time, the following global variables should reflect the cart sta
 <script src="http://ece.ubc.ca/~gpli/CPEN400A/hw2/test.js" type="text/javascript"></script>
 ```
 Once you add the above scripts, the testing automatically starts when page is loaded. Watch out the alert messages which tells you any missing components/functionalites. You are responsible for ensuring that all the functionalities above are implemented correctly - the tests are only there to help you. We reserve the right to test your code with other test cases than the above.
+
+## Code Quality
+You should ensure that your JavaScript code follows the best practices around variable naming, variable placement, modularization (dividing long code blocks into smaller functions) and comments (at the minimum, describing what each function does). Your code will be assessed for code quality during marking.
 
 ## Submission instructions:
 
