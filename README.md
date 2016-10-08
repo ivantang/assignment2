@@ -26,7 +26,7 @@ When you hover over any of the products within the web page, you need to show th
   
      }
      ```
-   Make sure when you add or remove a product to the cart, the quantity in **products** is maintained.
+   Make sure when you add or remove a product to the cart, the quantity in **products** is updated.
 
 3. **Timeout popup:**  (3 points)
 You also need to implement a timeout feature in the web application. Once the user loads the web page, you need to start the timer with an initial value of 30 seconds (Use the setTimeout or setInterval functions). If the user **does not** add / remove any product from the cart, you need to display an alert to the user. The alert message should be **Hey there! Are you still planning to buy something?** However, if the user adds/removes a product from the cart there should be no popup displayed (i.e., the timer is reset). You will need to keep track of the time the user has been inactive. Use a global variable called **inactiveTime** for this purpose. Once the user clicks OK in the alert popup, you will need to reset this time.   
