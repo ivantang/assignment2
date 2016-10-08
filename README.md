@@ -31,14 +31,14 @@ When you hover over any of the products within the web page, you need to show th
 3. **Timeout popup:**  (3 points)
 You also need to implement a timeout feature in the web application. Once the user loads the web page, you need to start the timer with an initial value of 30 seconds (Use the setTimeout or setInterval functions). If the user **does not** add / remove any product from the cart, you need to display an alert to the user. The alert message should be **Hey there! Are you still planning to buy something?** However, if the user adds/removes a product from the cart there should be no popup displayed (i.e., the timer is reset). You will need to keep track of the time the user has been inactive. Use a global variable called **inactiveTime** for this purpose. Once the user clicks OK in the alert popup, you will need to reset this time.   
 
-4. **Show Cart:** (Bonus Task: 0.5 points)
-You can add a button called **Show Cart** in your website. Clicking the button should display all the current product items/quantity in the cart one by one in an alert box. For example, if you have 3 items in your cart, you should have 3 different alert boxes. However, to not overwhelm the user with a bunch of alerts all together, we need to maintain a gap of 30 seconds within each alert box displayed to the user (after the user presses OK).
+4. **Show Cart:** (Bonus Task: 1 point)
+You can add a button called **Show Cart** in your website. Clicking the button should display all the current product items/quantity in the cart one by one in an alert box. For example, if you have 3 items in your cart, you should have 3 different alert boxes. However, to not overwhelm the user with a bunch of alerts all together, we need to maintain a gap of 5 seconds between each alert box displayed to the user (from the moment the user presses OK).
 
 
 At any point in time, the following global variables should reflect the cart state:
 
 1. cart - represents the total number of products in the cart in the form of associative array.
-2. products - represetns the total products available on the website along with their quantity in the form of associative array.
+2. products - represents the total products available on the website along with their quantity in the form of associative array.
 3. inactiveTime - represents the total time in seconds that the user has not clicked on add, remove, or the alert popup.
 
 
@@ -48,10 +48,15 @@ At any point in time, the following global variables should reflect the cart sta
 <script src="http://ece.ubc.ca/~kbajaj/cpen400a/jquery.js" type="text/javascript"></script>
 <script src="http://ece.ubc.ca/~gpli/CPEN400A/hw2/test.js" type="text/javascript"></script>
 ```
-Once you add the above scripts, the testing automatically starts when page is loaded. Watch out the alert messages which tells you any missing components/functionalites. You are responsible for ensuring that all the functionalities above are implemented correctly - the tests are only there to help you. We reserve the right to test your code with other test cases than the above.
+Once you add the above scripts, the testing automatically starts when page is loaded. Watch out for the alert messages which tells you any missing components/functionalites. You are responsible for ensuring that all the functionalities above are implemented correctly - the tests are only there to help you. We reserve the right to test your code with other test cases than the above.
 
 ## Code Quality
+(3 points)
 You should ensure that your JavaScript code follows the best practices around variable naming, variable placement, modularization (dividing long code blocks into smaller functions) and comments (at the minimum, describing what each function does). Your code will be assessed for code quality during marking.
+
+## Scalability
+(2 points)
+There are multiple ways to go about implementing the tasks specified in this assignment. However, you should consider the scalability of your implementation. For example, how much development effort would be required to maintain the website if you wish to add more products to the store?
 
 ## Submission instructions:
 
